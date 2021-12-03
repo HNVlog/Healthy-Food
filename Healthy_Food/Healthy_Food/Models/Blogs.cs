@@ -15,9 +15,11 @@ namespace Healthy_Food.Models
         public string Image { get; set; }
         public string Category { get; set; }
         public string Content { get; set; }
+        public string Name { get; set; }
+     
 
         public virtual ICollection<Blog_comments> Blog_comment { get; set; }
-        public virtual Blog_details Blog_detail { get; set; }
+        
         public virtual Users User { get; set; }
     }
 }

@@ -21,7 +21,7 @@ namespace Healthy_Food.Models
 
 
         public virtual ICollection<Product_images> Product_image { get; set; }
-        public virtual ICollection<Order_details> Order_detail { get; set; }
+        public virtual ICollection<Orders> Order { get; set; }
         public virtual Brands Brand { get; set; }
         public virtual Product_categories Product_category { get; set; }
     }

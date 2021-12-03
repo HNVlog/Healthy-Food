@@ -19,6 +19,7 @@ namespace Healthy_Food.Models
         public virtual ICollection<Blog_comments> Blog_comment { get; set; }
         public virtual ICollection<Blogs> Blog { get; set; }
         public virtual ICollection<Orders> Order { get; set; }
+        //public virtual ICollection<Order_details> Order_detail { get; set; }
 
         
 
