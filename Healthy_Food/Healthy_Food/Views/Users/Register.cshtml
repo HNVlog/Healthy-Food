@@ -1,0 +1,53 @@
+﻿@model Healthy_Food.Models.Users
+
+@{
+    ViewBag.Title = "Register";
+}
+
+<!--home-->
+<div class="home">
+    <div class="breadcrumbs_container">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><i class="bi bi-house-door"></i><a href="~">Home</a></li>
+                            <li>Register</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--register-->
+<div class="container">
+    <h2>REGISTER</h2>
+
+    @using (Html.BeginForm(new { htmlAttributes = new { @class = "form-login" } }))
+    {
+        @Html.AntiForgeryToken()
+            <div class="form-group">
+                @Html.LabelFor(Model => Model.Email)
+                @Html.EditorFor(Model => Model.Email, new { htmlAttributes = new { @type = "email", @class = "form-control form-control-user", @placeholder = "Enter Email Address..." } })
+                @Html.ValidationMessageFor(Model => Model.Email, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                @Html.LabelFor(Model => Model.Password)
+                @Html.EditorFor(Model => Model.Password, new { htmlAttributes = new { @type = "password", @class = "form-control", @placeholder = "Password" } })
+                @Html.ValidationMessageFor(Model => Model.Password, "", new { @class = "text-danger" })
+            </div>
+            <div class="form-group">
+                <label for="cpwd">Confirm PassWord:</label>
+                <input type="password" id="cpwd" class="form-control" placeholder="Enter password">
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-default">Register</button><br>
+                <a href="~" class="alink">OR LOGIN</a><hr>
+            </div>
+    }
+
+    </div>

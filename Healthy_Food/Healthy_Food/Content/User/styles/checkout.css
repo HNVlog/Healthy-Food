@@ -1,0 +1,26 @@
+.product_cart .order-table1 li:first-child{
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 20px;
+  padding-top: 0;
+  color: #0b080c;
+
+}
+.product_cart .order-table1 li.tb-normal{
+  font-weight: 400;
+  color: #0b080c;
+}
+.product_cart .order-table1 li span{
+  float: right;
+}
+.sp1{
+  margin-top: 30px;
+}
+.product_cart .order-table1 li {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 5px;
+  padding-top: 30px;
+  font-size: 16px;
+}
+.product_cart{
+  height: 730px;
+}

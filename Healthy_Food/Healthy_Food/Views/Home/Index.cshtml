@@ -2,343 +2,711 @@
     ViewBag.Title = "Home Page";
 }
 
+<!-- Home -->
+<div class="home">
+    <div class="home_slider_container">
 
-<!-- Page Heading -->
-<div class="d-sm-flex align-items-center justify-content-between mb-4">
-    <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-    <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-        <i class="fas fa-download fa-sm text-white-50"></i> Generate Report
-    </a>
-</div>
+        <!-- Home Slider -->
+        <div class="owl-carousel owl-theme home_slider">
 
-<!-- Content Row -->
-<div class="row">
-
-    <!-- Earnings (Monthly) Card Example -->
-    <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card border-left-primary shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                            Earnings (Monthly)
-                        </div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas fa-calendar fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Earnings (Monthly) Card Example -->
-    <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card border-left-success shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                            Earnings (Annual)
-                        </div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Earnings (Monthly) Card Example -->
-    <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card border-left-info shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                            Tasks
-                        </div>
-                        <div class="row no-gutters align-items-center">
-                            <div class="col-auto">
-                                <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
-                            </div>
-                            <div class="col">
-                                <div class="progress progress-sm mr-2">
-                                    <div class="progress-bar bg-info" role="progressbar"
-                                         style="width: 50%" aria-valuenow="50" aria-valuemin="0"
-                                         aria-valuemax="100"></div>
+            <!-- Home Slider Item -->
+            <div class="owl-item">
+                <a href="https://nuts.com/" target="_blank"><div class="home_slider_background" style="background-image:url(~/Content/User/img/home-slaider.jpg)"></div></a>
+                <div class="home_slider_content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col text-center">
+                                <div class="home_slider_form_container">
+                                    <form action="#" id="home_search_form_1" class="home_search_form d-flex flex-lg-row flex-column align-items-center justify-content-between">
+                                        <div class="d-flex flex-row align-items-center justify-content-start">
+                                            <input type="search" class="home_search_input" placeholder="Keyword Search" required="required">
+                                            <select class="dropdown_item_select home_search_input">
+                                                <option>Dried fruits</option>
+                                                <option>Good</option>
+                                                <option>Very Good</option>
+                                                <option>Perfect</option>
+                                                <option>Tasty</option>
+                                            </select>
+                                            <select class="dropdown_item_select home_search_input">
+                                                <option>Select Price Type</option>
+                                                <option>Expensive</option>
+                                                <option>Cheap</option>
+                                                <option>Cheaper Price</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="home_search_button">search</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-auto">
-                        <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                    </div>
                 </div>
             </div>
-        </div>
-    </div>
 
-    <!-- Pending Requests Card Example -->
-    <div class="col-xl-3 col-md-6 mb-4">
-        <div class="card border-left-warning shadow h-100 py-2">
-            <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                            Pending Requests
+            <!-- Home Slider Item -->
+            <div class="owl-item">
+                <a href="https://nuts.com/" target="_blank"><div class="home_slider_background" style="background-image: url(~/Content/User/img/home-slaider.jpg)"></div></a>
+                <div class="home_slider_content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col text-center">
+                                <div class="home_slider_form_container">
+                                    <form action="#" id="home_search_form_2" class="home_search_form d-flex flex-lg-row flex-column align-items-center justify-content-between">
+                                        <div class="d-flex flex-row align-items-center justify-content-start">
+                                            <input type="search" class="home_search_input" placeholder="Keyword Search" required="required">
+                                            <select class="dropdown_item_select home_search_input">
+                                                <option>Dried fruits</option>
+                                                <option>Good</option>
+                                                <option>Very Good</option>
+                                                <option>Perfect</option>
+                                                <option>Tasty</option>
+                                            </select>
+                                            <select class="dropdown_item_select home_search_input">
+                                                <option>Select Price Type</option>
+                                                <option>Expensive</option>
+                                                <option>Cheap</option>
+                                                <option>Cheaper Price</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="home_search_button">search</button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
-                        <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
-                    </div>
-                    <div class="col-auto">
-                        <i class="fas fa-comments fa-2x text-gray-300"></i>
                     </div>
                 </div>
             </div>
+
+            <!-- Home Slider Item -->
+            <div class="owl-item">
+                <a href="https://nuts.com/" target="_blank"><div class="home_slider_background" style="background-image: url(~/Content/User/img/home-slieder3.jpg)"></div></a>
+                <div class="home_slider_content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col text-center">
+                                <div class="home_slider_form_container">
+                                    <form action="#" id="home_search_form_3" class="home_search_form d-flex flex-lg-row flex-column align-items-center justify-content-between">
+                                        <div class="d-flex flex-row align-items-center justify-content-start">
+                                            <input type="search" class="home_search_input" placeholder="Keyword Search" required="required">
+                                            <select class="dropdown_item_select home_search_input">
+                                                <option>Dried fruits</option>
+                                                <option>Good</option>
+                                                <option>Very Good</option>
+                                                <option>Perfect</option>
+                                                <option>Tasty</option>
+                                            </select>
+                                            <select class="dropdown_item_select home_search_input">
+                                                <option>Select Price Type</option>
+                                                <option>Expensive</option>
+                                                <option>Cheap</option>
+                                                <option>Cheaper Price</option>
+                                            </select>
+                                        </div>
+                                        <button type="submit" class="home_search_button">search</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
+
+    <!-- Home Slider Nav -->
+
+    <div class="home_slider_nav home_slider_prev"><i class="fa fa-angle-left" aria-hidden="true"></i></div>
+    <div class="home_slider_nav home_slider_next"><i class="fa fa-angle-right" aria-hidden="true"></i></div>
 </div>
-
-<!-- Content Row -->
-
-<div class="row">
-
-    <!-- Area Chart -->
-    <div class="col-xl-8 col-lg-7">
-        <div class="card shadow mb-4">
-            <!-- Card Header - Dropdown -->
-            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                <h6 class="m-0 font-weight-bold text-primary">Earnings Overview</h6>
-                <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                         aria-labelledby="dropdownMenuLink">
-                        <div class="dropdown-header">Dropdown Header:</div>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Card Body -->
-            <div class="card-body">
-                <div class="chart-area">
-                    <canvas id="myAreaChart"></canvas>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Pie Chart -->
-    <div class="col-xl-4 col-lg-5">
-        <div class="card shadow mb-4">
-            <!-- Card Header - Dropdown -->
-            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                <h6 class="m-0 font-weight-bold text-primary">Revenue Sources</h6>
-                <div class="dropdown no-arrow">
-                    <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                         aria-labelledby="dropdownMenuLink">
-                        <div class="dropdown-header">Dropdown Header:</div>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Card Body -->
-            <div class="card-body">
-                <div class="chart-pie pt-4 pb-2">
-                    <canvas id="myPieChart"></canvas>
-                </div>
-                <div class="mt-4 text-center small">
-                    <span class="mr-2">
-                        <i class="fas fa-circle text-primary"></i> Direct
-                    </span>
-                    <span class="mr-2">
-                        <i class="fas fa-circle text-success"></i> Social
-                    </span>
-                    <span class="mr-2">
-                        <i class="fas fa-circle text-info"></i> Referral
-                    </span>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Content Row -->
-<div class="row">
-
-    <!-- Content Column -->
-    <div class="col-lg-6 mb-4">
-
-        <!-- Project Card Example -->
-        <div class="card shadow mb-4">
-            <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
-            </div>
-            <div class="card-body">
-                <h4 class="small font-weight-bold">
-                    Server Migration <span class="float-right">20%</span>
-                </h4>
-                <div class="progress mb-4">
-                    <div class="progress-bar bg-danger" role="progressbar" style="width: 20%"
-                         aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <h4 class="small font-weight-bold">
-                    Sales Tracking <span class="float-right">40%</span>
-                </h4>
-                <div class="progress mb-4">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 40%"
-                         aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <h4 class="small font-weight-bold">
-                    Customer Database <span class="float-right">60%</span>
-                </h4>
-                <div class="progress mb-4">
-                    <div class="progress-bar" role="progressbar" style="width: 60%"
-                         aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <h4 class="small font-weight-bold">
-                    Payout Details <span class="float-right">80%</span>
-                </h4>
-                <div class="progress mb-4">
-                    <div class="progress-bar bg-info" role="progressbar" style="width: 80%"
-                         aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <h4 class="small font-weight-bold">
-                    Account Setup <span class="float-right">Complete!</span>
-                </h4>
-                <div class="progress">
-                    <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
-                         aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Color System -->
+<!--End Home-->
+<!-- ITEMS BEGIN -->
+<div class="features">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-6 mb-4">
-                <div class="card bg-primary text-white shadow">
-                    <div class="card-body">
-                        Primary
-                        <div class="text-white-50 small">#4e73df</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card bg-success text-white shadow">
-                    <div class="card-body">
-                        Success
-                        <div class="text-white-50 small">#1cc88a</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card bg-info text-white shadow">
-                    <div class="card-body">
-                        Info
-                        <div class="text-white-50 small">#36b9cc</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card bg-warning text-white shadow">
-                    <div class="card-body">
-                        Warning
-                        <div class="text-white-50 small">#f6c23e</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card bg-danger text-white shadow">
-                    <div class="card-body">
-                        Danger
-                        <div class="text-white-50 small">#e74a3b</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card bg-secondary text-white shadow">
-                    <div class="card-body">
-                        Secondary
-                        <div class="text-white-50 small">#858796</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card bg-light text-black shadow">
-                    <div class="card-body">
-                        Light
-                        <div class="text-black-50 small">#f8f9fc</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 mb-4">
-                <div class="card bg-dark text-white shadow">
-                    <div class="card-body">
-                        Dark
-                        <div class="text-white-50 small">#5a5c69</div>
+            <div class="col">
+                <div class="section_title_container text-center">
+                    <h2 class="section_title">DRIED FRUIT PRODUCTS</h2>
+                    <div class="section_subtitle">
+                        <p>
+                            Welcome to MaruDryFruit, if you have come to our store, we won't let you down with the food and offers you can't miss.
+                            Let's shop together!<br>
+                            Let's go!
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-
-    </div>
-
-    <div class="col-lg-6 mb-4">
-
-        <!-- Illustrations -->
-        <div class="card shadow mb-4">
-            <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">Illustrations</h6>
-            </div>
-            <div class="card-body">
-                <div class="text-center">
-                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;"
-                         src="~/Content/img/undraw_posting_photo.svg" alt="...">
+        <div class="row features_row">
+            <!-- Item 1-->
+            <div class="col-lg-3 feature_col">
+                <div class="feature text-center trans_400">
+                    <div class="feature_icon"><a href="information.html"><img src="~/Content/User/img/akai.jpg" alt=""></a></div>
+                    <h3 class="feature_title"><a href="information.html">Akai</a></h3>
+                    <div class="course_price ml-auto"><span>$100</span>$50/lb</div>
+                    <div class="feature_sticker">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i><br>(4.5* rating )
+                    </div>
+                    <div class="cart1"><a href="#"><i class="bi bi-cart-plus"></i><span> Add To Cart</span></a></div>
                 </div>
-                <p>
-                    Add some quality, svg illustrations to your project courtesy of <a target="_blank" rel="nofollow" href="https://undraw.co/">unDraw</a>, a
-                    constantly updated collection of beautiful svg images that you can use
-                    completely free and without attribution!
-                </p>
-                <a target="_blank" rel="nofollow" href="https://undraw.co/">
-                    Browse Illustrations on
-                    unDraw &rarr;
-                </a>
+
+            </div>
+            <!-- Item 2-->
+            <div class="col-lg-3 feature_col">
+                <div class="feature text-center trans_400">
+                    <div class="feature_icon"><a href="information.html"><img src="~/Content/User/img/kiwi.jpg" alt=""></a></div>
+                    <h3 class="feature_title"><a href="information.html">Kiwi</a></h3>
+                    <div class="course_price ml-auto">$200/lb</div>
+                    <div class="feature_sticker">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i><br>(4.5* rating )
+                    </div>
+                    <div class="cart1"><a href="#"><i class="bi bi-cart-plus"></i><span> Add To Cart</span></a></div>
+                </div>
+            </div>
+            <!-- Item 3-->
+            <div class="col-lg-3 feature_col">
+                <div class="feature text-center trans_400">
+                    <div class="feature_icon"><a href="information.html"><img src="~/Content/User/img/pinapple.jpg" alt=""></a></div>
+                    <h3 class="feature_title"><a href="information.html">Pinapple</a></h3>
+                    <div class="course_price ml-auto">$50/lb</div>
+                    <div class="feature_sticker">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i><br>(5* rating )
+                    </div>
+                    <div class="cart1"><a href="#"><i class="bi bi-cart-plus"></i><span> Add To Cart</span></a></div>
+                </div>
+            </div>
+            <!-- Item 4-->
+            <div class="col-lg-3 feature_col">
+                <div class="feature text-center trans_400">
+                    <div class="feature_icon"><a href="information.html"><img src="~/Content/User/img/oranges.jpg" alt=""></a></div>
+                    <h3 class="feature_title"><a href="information.html">Oranges</a></h3>
+                    <div class="course_price ml-auto">$91/lb</div>
+                    <div class="feature_sticker">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i><br>(5* rating )
+                    </div>
+                    <div class="cart1"><a href="#"><i class="bi bi-cart-plus"></i><span> Add To Cart</span></a></div>
+                </div>
+            </div>
+            <!-- Item 5-->
+            <div class="col-lg-3 feature_col">
+                <div class="feature text-center trans_400">
+                    <div class="feature_icon"><a href="information.html"><img src="~/Content/User/img/banaa.jpg" alt=""></a></div>
+                    <h3 class="feature_title"><a href="information.html">Bannaa</a></h3>
+                    <div class="course_price ml-auto">$45/lb</div>
+                    <div class="feature_sticker">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i><br>(4* rating )
+                    </div>
+                    <div class="cart1"><a href="#"><i class="bi bi-cart-plus"></i><span> Add To Cart</span></a></div>
+                </div>
+            </div>
+            <!-- Item 6-->
+            <div class="col-lg-3 feature_col">
+                <div class="feature text-center trans_400">
+                    <div class="feature_icon"><a href="information.html"><img src="~/Content/User/img/cantaloupe.jpg" alt=""></a></div>
+                    <h3 class="feature_title"><a href="information.html">Cantaloupe</a></h3>
+                    <div class="course_price ml-auto"><span>$29</span>$19/lb</div>
+                    <div class="feature_sticker">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i><br>(5* rating )
+                    </div>
+                    <div class="cart1"><a href="#"><i class="bi bi-cart-plus"></i><span> Add To Cart</span></a></div>
+                </div>
+            </div>
+            <!-- Item 7-->
+            <div class="col-lg-3 feature_col">
+                <div class="feature text-center trans_400">
+                    <div class="feature_icon"><a href="information.html"><img src="~/Content/User/img/canberries.jpg" alt=""></a></div>
+                    <h3 class="feature_title"><a href="information.html">Canberries</a></h3>
+                    <div class="course_price ml-auto">$10/lb</div>
+                    <div class="feature_sticker">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i><br>(5* rating )
+                    </div>
+                    <div class="cart1"><a href="#"><i class="bi bi-cart-plus"></i><span> Add To Cart</span></a></div>
+                </div>
+            </div>
+            <!-- Item 8-->
+            <div class="col-lg-3 feature_col">
+                <div class="feature text-center trans_400">
+                    <div class="feature_icon"><a href="information.html"><img src="~/Content/User/img/cherries.jpg" alt=""></a></div>
+                    <h3 class="feature_title"><a href="information.html">Cherries</a></h3>
+                    <div class="course_price ml-auto"><span>$1000</span>$500/lb</div>
+                    <div class="feature_sticker">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i><br>(5* rating )
+                    </div>
+                    <div class="cart1"><a href="#"><i class="bi bi-cart-plus"></i><span> Add To Cart</span></a></div>
+                </div>
+            </div>
+            <!-- Item 9-->
+            <div class="col-lg-3 feature_col">
+                <div class="feature text-center trans_400">
+                    <div class="feature_icon"><a href="information.html"><img src="~/Content/User/img/mango.jpg" alt=""></a></div>
+                    <h3 class="feature_title"><a href="information.html">Mango</a></h3>
+                    <div class="course_price ml-auto"><span>$500</span>$50/lb</div>
+                    <div class="feature_sticker">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i><br>(4* rating )
+                    </div>
+                    <div class="cart1"><a href="#"><i class="bi bi-cart-plus"></i><span> Add To Cart</span></a></div>
+                </div>
+            </div>
+            <!-- Item 10-->
+            <div class="col-lg-3 feature_col">
+                <div class="feature text-center trans_400">
+                    <div class="feature_icon"><a href="information.html"><img src="~/Content/User/img/baobab.jpg" alt=""></a></div>
+                    <h3 class="feature_title"><a href="information.html">Baobab</a></h3>
+                    <div class="course_price ml-auto"><span>$200</span>$100/lb</div>
+                    <div class="feature_sticker">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i><br>(5* rating )
+                    </div>
+                    <div class="cart1"><a href="#"><i class="bi bi-cart-plus"></i><span> Add To Cart</span></a></div>
+                </div>
+            </div>
+            <!-- Item 11-->
+            <div class="col-lg-3 feature_col">
+                <div class="feature text-center trans_400">
+                    <div class="feature_icon"><a href="information.html"><img src="~/Content/User/img/blackberries.jpg" alt=""></a></div>
+                    <h3 class="feature_title"><a href="information.html">Blackberries</a></h3>
+                    <div class="course_price ml-auto">$100/lb</div>
+                    <div class="feature_sticker">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i><br>(5* rating )
+                    </div>
+                    <div class="cart1"><a href="#"><i class="bi bi-cart-plus"></i><span> Add To Cart</span></a></div>
+                </div>
+            </div>
+            <!-- Item 12-->
+            <div class="col-lg-3 feature_col">
+                <div class="feature text-center trans_400">
+                    <div class="feature_icon"><a href="information.html"><img src="~/Content/User/img/bluecherries.jpg" alt=""></a></div>
+                    <h3 class="feature_title"><a href="information.html">Bluecherries</a></h3>
+                    <div class="course_price ml-auto">$50/lb</div>
+                    <div class="feature_sticker">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i><br>(4* rating )
+                    </div>
+                    <div class="cart1"><a href="#"><i class="bi bi-cart-plus"></i><span> Add To Cart</span></a></div>
+                </div>
+            </div>
+            <!-- Item 13-->
+            <div class="col-lg-3 feature_col">
+                <div class="feature text-center trans_400">
+                    <div class="feature_icon"><a href="information.html"><img src="~/Content/User/img/plums.jpg" alt=""></a></div>
+                    <h3 class="feature_title"><a href="information.html">Plums</a></h3>
+                    <div class="course_price ml-auto"><span>$120</span>$50/lb</div>
+                    <div class="feature_sticker">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i><br>(4.5* rating )
+                    </div>
+                    <div class="cart1"><a href="#"><i class="bi bi-cart-plus"></i><span> Add To Cart</span></a></div>
+                </div>
+            </div>
+            <!-- Item 14-->
+            <div class="col-lg-3 feature_col">
+                <div class="feature text-center trans_400">
+                    <div class="feature_icon"><a href="information.html"><img src="~/Content/User/img/elderberries.jpg" alt=""></a></div>
+                    <h3 class="feature_title"><a href="information.html">Elderberries</a></h3>
+                    <div class="course_price ml-auto"><span>$150</span>$50/lb</div>
+                    <div class="feature_sticker">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i><br>(5* rating )
+                    </div>
+                    <div class="cart1"><a href="#"><i class="bi bi-cart-plus"></i><span> Add To Cart</span></a></div>
+                </div>
+            </div>
+            <!-- Item 15-->
+            <div class="col-lg-3 feature_col">
+                <div class="feature text-center trans_400">
+                    <div class="feature_icon"><a href="information.html"><img src="~/Content/User/img/dates.jpg" alt=""></a></div>
+                    <h3 class="feature_title"><a href="information.html">Cherries</a></h3>
+                    <div class="course_price ml-auto">$180/lb</div>
+                    <div class="feature_sticker">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i><br>(4.5* rating )
+                    </div>
+                    <div class="cart1"><a href="#"><i class="bi bi-cart-plus"></i><span> Add To Cart</span></a></div>
+                </div>
+            </div>
+            <!-- Item 16-->
+            <div class="col-lg-3 feature_col">
+                <div class="feature text-center trans_400">
+                    <div class="feature_icon"><a href="information.html"><img src="~/Content/User/img/cocount.jpg" alt=""></a></div>
+                    <h3 class="feature_title"><a href="information.html">Cocount</a></h3>
+                    <div class="course_price ml-auto">$20/lb</div>
+                    <div class="feature_sticker">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i><br>(4.5* rating )
+                    </div>
+                    <div class="cart1"><a href="#"><i class="bi bi-cart-plus"></i><span> Add To Cart</span></a></div>
+                </div>
             </div>
         </div>
-
-        <!-- Approach -->
-        <div class="card shadow mb-4">
-            <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">Development Approach</h6>
-            </div>
-            <div class="card-body">
-                <p>
-                    SB Admin 2 makes extensive use of Bootstrap 4 utility classes in order to reduce
-                    CSS bloat and poor page performance. Custom CSS classes are used to create
-                    custom components and custom utility classes.
-                </p>
-                <p class="mb-0">
-                    Before working with this theme, you should become familiar with the
-                    Bootstrap framework, especially the utility classes.
-                </p>
-            </div>
-        </div>
-
     </div>
 </div>
+<!--End ITEM-->
+<!-- Deal of  the week-->
+<div class="events">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="section_title_container text-center">
+                    <h2 class="section_title">PRODUCT DEALS AND DISCOUNTS</h2>
+                    <div class="section_subtitle">
+                        <p>Below are the deals and deals of the dried fruit store</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row events_row">
+
+            <!-- Event -->
+            <div class="col-lg-4 event_col1">
+                <div class="event event_left">
+                    <div class="event_image"><img src="~/Content/User/img/sale3.jpg" width="300" alt="Black Friday"></div>
+                    <div class="event_body d-flex flex-row align-items-start justify-content-start">
+                        <div class="icon_rell">
+                            <a href="#"><i class="bi bi-bell-fill"></i></a>
+                        </div>
+                        <div class="event_content">
+                            <div class="event_title"><a href="#">PREE SHIPPING ALL PRODUCTS</a></div>
+                            <div class="event_info_container">
+                                <div class="event_info"><i class="fa fa-clock-o" aria-hidden="true"></i><span>00.00 - 23.59</span></div>
+                                <div class="event_info"><i class="bi bi-calendar4-week" aria-hidden="true"></i><span>01/11-30/11</span></div>
+                                <div class="event_text">
+                                    <p>
+                                        We have the offer of free shipping all our products, don't miss out and place your order.<br>
+                                        Don't miss out!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event -->
+            <div class="col-lg-4 event_col">
+                <div class="event event_mid">
+                    <div class="event_image"><img src="~/Content/User/img/sale5.jpg" alt="Premium Dry Fruits" width="300"></div>
+                    <div class="event_body d-flex flex-row align-items-start justify-content-start">
+                        <div class="icon_rell">
+                            <a href="#"><i class="bi bi-bell-fill"></i></a>
+                        </div>
+                        <div class="event_content">
+                            <div class="event_title"><a href="#">FLASH SALE OFF 50% ALL DRY FRUITS</a></div>
+                            <div class="event_info_container">
+                                <div class="event_info"><i class="fa fa-clock-o" aria-hidden="true"></i><span>00.00 - 22.30</span></div>
+                                <div class="event_info"><i class="bi bi-calendar4-week" aria-hidden="true"></i><span>01/11-10/11</span></div>
+                                <div class="event_text">
+                                    <p>
+                                        In the coming days from 1-11 to 10-11 all of our dried fruit products are discounted up to 50%.<br>Don't miss out!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event -->
+            <div class="col-lg-4 event_col">
+                <div class="event event_right1">
+                    <div class="event_image"><img src="~/Content/User/img/sale6.jpg" alt="" width="300"></div>
+                    <div class="event_body d-flex flex-row align-items-start justify-content-start">
+                        <div class="icon_rell">
+                            <a href="#"><i class="bi bi-bell-fill"></i></a>
+                        </div>
+                        <div class="event_content">
+                            <div class="event_title"><a href="#">BLACK FRIDAY SALE GIFT DON'T MISS</a></div>
+                            <div class="event_info_container">
+                                <div class="event_info"><i class="fa fa-clock-o" aria-hidden="true"></i><span>00.00 - 12.00</span></div>
+                                <div class="event_info"><i class="bi bi-calendar4-week" aria-hidden="true"></i><span>12/12-12/12</span></div>
+                                <div class="event_text">
+                                    <p>For today 12-12 we have lots of black friday deals and gifts for you guys.<br> Don't miss out!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--ENd deal of the week-->
+<!--Up festival and gift-->
+<div class="events">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="section_title_container text-center">
+                    <h2 class="section_title">UPCOMING FESTIVAL</h2>
+                    <div class="section_subtitle">
+                        <p>
+                            Here are the upcoming festivals and gifts for you, please stay tuned to receive our gifts.<br>
+                            Don't miss out!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row events_row">
+
+            <!-- Event -->
+            <div class="col-lg-4 event_col1">
+                <div class="event event_left">
+                    <div class="event_image"><img src="~/Content/User/img/event1.jpg" alt="Black Friday"></div>
+                    <div class="event_body d-flex flex-row align-items-start justify-content-start">
+                        <div class="event_date">
+                            <div class="d-flex flex-column align-items-center justify-content-center trans_200">
+                                <div class="event_day trans_200">26</div>
+                                <div class="event_month trans_200">Feb</div>
+                            </div>
+                        </div>
+                        <div class="event_content">
+                            <div class="event_title"><a href="gift.html">BLACK FRIDAY COMBO DRY FRUITS</a></div>
+                            <div class="event_info_container">
+                                <div class="event_info"><i class="fa fa-clock-o" aria-hidden="true"></i><span>00.00 - 23.59</span></div>
+                                <div class="event_info"><i class="fa fa-map-marker" aria-hidden="true"></i><span>Bắc Ninh</span></div>
+                                <div class="event_text">
+                                    <p>
+                                        Special offer for low price dried fruit combos.<br>
+                                        Don't miss out!   <i class="bi bi-emoji-heart-eyes"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event -->
+            <div class="col-lg-4 event_col">
+                <div class="event event_mid">
+                    <div class="event_image"><img src="~/Content/User/img/event4.jpg" alt="Premium Dry Fruits"></div>
+                    <div class="event_body d-flex flex-row align-items-start justify-content-start">
+                        <div class="event_date">
+                            <div class="d-flex flex-column align-items-center justify-content-center trans_200">
+                                <div class="event_day trans_200">22</div>
+                                <div class="event_month trans_200">Mar</div>
+                            </div>
+                        </div>
+                        <div class="event_content">
+                            <div class="event_title"><a href="gift.html">FLASH SALE PREMIUM DRY FRUITS</a></div>
+                            <div class="event_info_container">
+                                <div class="event_info"><i class="fa fa-clock-o" aria-hidden="true"></i><span>09.00 - 21.30</span></div>
+                                <div class="event_info"><i class="fa fa-map-marker" aria-hidden="true"></i><span>Hà Nội</span></div>
+                                <div class="event_text">
+                                    <p>
+                                        Our premium and delicious dry fruits special offer<br>
+                                        Don't miss out!   <i class="bi bi-emoji-heart-eyes"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Event -->
+            <div class="col-lg-4 event_col">
+                <div class="event event_right">
+                    <div class="event_image"><img src="~/Content/User/img/event5.jpg" alt=""></div>
+                    <div class="event_body d-flex flex-row align-items-start justify-content-start">
+                        <div class="event_date">
+                            <div class="d-flex flex-column align-items-center justify-content-center trans_200">
+                                <div class="event_day trans_200">22</div>
+                                <div class="event_month trans_200">Nov</div>
+                            </div>
+                        </div>
+                        <div class="event_content">
+                            <div class="event_title"><a href="gift.html">FLASE SALE COMBO DRY FRUIT AND SNACKS</a></div>
+                            <div class="event_info_container">
+                                <div class="event_info"><i class="fa fa-clock-o" aria-hidden="true"></i><span>01.00 - 11.00</span></div>
+                                <div class="event_info"><i class="fa fa-map-marker" aria-hidden="true"></i><span>Tam Giang</span></div>
+                                <div class="event_text">
+                                    <p>
+                                        We are flash sale the dried fruit combos with delicious snacks,
+                                        Don't miss out!   <i class="bi bi-emoji-heart-eyes"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--End up festival and gift-->
+<!--The best dishes of the shop-->
+<div class="team">
+    <div class="team_background parallax-window" data-parallax="scroll" data-image-src="~/Content/User/img/team_background.jpg" data-speed="0.8"></div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="section_title_container text-center">
+                    <h2 class="section_title">THE BEST DISHES OF THE SHOP</h2>
+                    <div class="section_subtitle"><p>Here are the best dishes of our store and also the ones that customers like and order the most and customers trust us very much.</p></div>
+                </div>
+            </div>
+        </div>
+        <div class="row team_row">
+
+            <!-- Team Item -->
+            <div class="col-lg-3 col-md-6 team_col">
+                <div class="team_item">
+                    <div class="team_image"><img src="~/Content/User/img/cherries.jpg" alt=""></div>
+                    <div class="team_body">
+                        <div class="team_title"><a href="information.html">CHERRIES</a></div>
+                        <div class="team_subtitle">Trust Customers</div>
+                        <div class="social_list">
+                            <ul>
+                                <li><a href="#"><i class="bi bi-emoji-sunglasses" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="bi bi-emoji-sunglasses" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="bi bi-emoji-sunglasses" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Item -->
+            <div class="col-lg-3 col-md-6 team_col">
+                <div class="team_item">
+                    <div class="team_image"><img src="~/Content/User/img/bluecherries.jpg" alt="Blue Cherries"></div>
+                    <div class="team_body">
+                        <div class="team_title"><a href="#">BLUE CHERRIES</a></div>
+                        <div class="team_subtitle">Trust Customers</div>
+                        <div class="social_list">
+                            <ul>
+                                <li><a href="#"><i class="bi bi-emoji-smile" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="bi bi-emoji-smile" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="bi bi-emoji-smile" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Item -->
+            <div class="col-lg-3 col-md-6 team_col">
+                <div class="team_item">
+                    <div class="team_image"><img src="~/Content/User/img/apple.jpg" alt="Apple"></div>
+                    <div class="team_body">
+                        <div class="team_title"><a href="#">APPLE</a></div>
+                        <div class="team_subtitle">Trust Customers</div>
+                        <div class="social_list">
+                            <ul>
+                                <li><a href="#"><i class="bi bi-emoji-heart-eyes" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="bi bi-emoji-heart-eyes" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="bi bi-emoji-heart-eyes" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Item -->
+            <div class="col-lg-3 col-md-6 team_col">
+                <div class="team_item">
+                    <div class="team_image"><img src="~/Content/User/img/kiwi.jpg" alt="Kiwi"></div>
+                    <div class="team_body">
+                        <div class="team_title"><a href="#">KIWI</a></div>
+                        <div class="team_subtitle">Trust Customers</div>
+                        <div class="social_list">
+                            <ul>
+                                <li><a href="#"><i class="bi bi-emoji-laughing" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="bi bi-emoji-laughing" aria-hidden="true"></i></a></li>
+                                <li><a href="#"><i class="bi bi-emoji-laughing" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- End best dishes of the shop-->
+<!-- Newsletter -->
+<div class="newsletter">
+    <div class="newsletter_background parallax-window" data-parallax="scroll" data-image-src="~/Content/User/img/newsletter2.jpg" data-speed="0.8"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="newsletter_container d-flex flex-lg-row flex-column align-items-center justify-content-start">
+
+                    <!-- Newsletter Content -->
+                    <div class="newsletter_content text-lg-left text-center">
+                        <div class="newsletter_title">Sign up to receive the latest deals</div>
+                        <div class="newsletter_subtitle">Subcribe to lastest smartphones news & great deals we offer</div>
+                    </div>
+
+                    <!-- Newsletter Form -->
+                    <div class="newsletter_form_container ml-lg-auto">
+                        <form action="#" id="newsletter_form" class="newsletter_form d-flex flex-row align-items-center justify-content-center">
+                            <input type="email" class="newsletter_input" placeholder="Your Email" required="required">
+                            <button type="submit" class="newsletter_button">subscribe</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Newsletter-->

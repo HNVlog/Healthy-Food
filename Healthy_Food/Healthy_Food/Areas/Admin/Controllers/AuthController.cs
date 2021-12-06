@@ -7,6 +7,7 @@ using Healthy_Food.Models;
 using System.Security.Cryptography;
 using System.Text;
 using System.Web.Security;
+using Healthy_Food.Areas.Admin.Models;
 
 namespace Healthy_Food.Areas.Admin.Controllers
 {
@@ -25,15 +26,15 @@ namespace Healthy_Food.Areas.Admin.Controllers
         {
             if (ModelState.IsValid)
             {
-                var check = db.Admins.FirstOrDefault(s => s.Username.Equals(admin.Username));
+                var check = db.Admins.FirstOrDefault(s => s.Email.Equals(admin.Email));
                 if (check == null)
                 {
                     // convert pass thanh md5
                     admin.Password = GetMD5(admin.Password);
                     db.Admins.Add(admin);
                     db.SaveChanges();
-                    FormsAuthentication.SetAuthCookie(admin.Username, true);// xac nhận đã đăng nhập
-                    return RedirectToAction("Index", "Category");
+                    FormsAuthentication.SetAuthCookie(admin.Email, true);// xac nhận đã đăng nhập
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {
@@ -68,11 +69,11 @@ namespace Healthy_Food.Areas.Admin.Controllers
             if (ModelState.IsValid)
             {
                 admin.Password = GetMD5(admin.Password);
-                var data = db.Admins.Where(s => s.Username.Equals(admin.Username) && s.Password.Equals(admin.Password)).FirstOrDefault();
+                var data = db.Admins.Where(s => s.Email.Equals(admin.Email) && s.Password.Equals(admin.Password)).FirstOrDefault();
                 if (data != null)
                 {
-                    FormsAuthentication.SetAuthCookie(data.Username, true);// xac nhận đã đăng nhập
-                    return RedirectToAction("Index", "Category");
+                    FormsAuthentication.SetAuthCookie(data.Email, true);// xac nhận đã đăng nhập
+                    return RedirectToAction("Index", "Home");
                 }
             }
             return View();
