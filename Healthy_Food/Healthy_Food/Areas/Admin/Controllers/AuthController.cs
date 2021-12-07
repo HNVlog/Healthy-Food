@@ -34,7 +34,7 @@ namespace Healthy_Food.Areas.Admin.Controllers
                     db.Admins.Add(admin);
                     db.SaveChanges();
                     FormsAuthentication.SetAuthCookie(admin.Email, true);// xac nhận đã đăng nhập
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "AdminHome");
                 }
                 else
                 {
@@ -73,7 +73,7 @@ namespace Healthy_Food.Areas.Admin.Controllers
                 if (data != null)
                 {
                     FormsAuthentication.SetAuthCookie(data.Email, true);// xac nhận đã đăng nhập
-                    return RedirectToAction("Index", "Home");
+                    return RedirectToAction("Index", "AdminHome");
                 }
             }
             return View();

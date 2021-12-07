@@ -127,8 +127,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\AdminHomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\AuthController.cs" />
-    <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Models\Admin.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
@@ -2120,7 +2120,6 @@
     <Content Include="Areas\Admin\Views\Shared\_Navbar.cshtml" />
     <Content Include="Areas\Admin\Views\Auth\Register.cshtml" />
     <Content Include="Areas\Admin\Views\Auth\Login.cshtml" />
-    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
     <Content Include="Content\User\plugins\font-awesome-4.7.0\fonts\fontawesome-webfont.eot" />
     <Content Include="Content\User\plugins\font-awesome-4.7.0\fonts\fontawesome-webfont.ttf" />
     <Content Include="Content\User\plugins\font-awesome-4.7.0\fonts\fontawesome-webfont.woff" />
@@ -2154,6 +2153,7 @@
     <Content Include="Content\User\plugins\font-awesome-4.7.0\scss\_screen-reader.scss" />
     <Content Include="Content\User\plugins\font-awesome-4.7.0\scss\_stacked.scss" />
     <Content Include="Content\User\plugins\font-awesome-4.7.0\scss\_variables.scss" />
+    <Content Include="Areas\Admin\Views\AdminHome\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -2182,6 +2182,7 @@
     <Content Include="Views\Shared\_Header.cshtml" />
     <Content Include="Views\Shared\_Footer.cshtml" />
     <Content Include="Views\Users\Register.cshtml" />
+    <Content Include="Views\Users\Login.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

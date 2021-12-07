@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace Healthy_Food.Areas.Admin.Controllers
 {
-    public class HomeController : Controller
+    public class AdminHomeController : Controller
     {
-        // GET: Admin/Home
+        // GET: Admin/AdminHome
         public ActionResult Index()
         {
             return View();
