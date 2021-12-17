@@ -12,6 +12,12 @@ namespace Healthy_Food.Controllers
         {
             return View();
         }
+        public ActionResult Cart()
+        {
+            ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
 
         public ActionResult About()
         {

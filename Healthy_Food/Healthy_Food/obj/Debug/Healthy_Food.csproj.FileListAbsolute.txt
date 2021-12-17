@@ -159,7 +159,7 @@ E:\ki3\Healthy_Food\Healthy_Food\bin\Newtonsoft.Json.xml
 E:\ki3\Healthy_Food\Healthy_Food\bin\Antlr3.Runtime.pdb
 E:\ki3\Healthy_Food\Healthy_Food\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 E:\ki3\Healthy_Food\Healthy_Food\obj\Debug\Healthy_Food.csproj.CoreCompileInputs.cache
-E:\ki3\Healthy_Food\Healthy_Food\obj\Debug\Healthy_Food.csproj.CopyComplete
 E:\ki3\Healthy_Food\Healthy_Food\obj\Debug\Healthy_Food.dll
 E:\ki3\Healthy_Food\Healthy_Food\obj\Debug\Healthy_Food.pdb
 C:\Users\ADMIN\Documents\GitHub\Healthy-Food\Healthy_Food\Healthy_Food\obj\Debug\Healthy_Food.csproj.AssemblyReference.cache
+E:\ki3\Healthy_Food\Healthy_Food\obj\Debug\Healthy_Food.csproj.AssemblyReference.cache

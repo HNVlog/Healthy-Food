@@ -43,11 +43,13 @@ namespace Healthy_Food
             // User Layout
             bundles.Add(new StyleBundle("~/User/css").Include(
                       "~/Content/User/styles/bootstrap4/bootstrap.min.css",
+                      "~/Content/User/styles/shoppingcart.css",
                       "~/Content/User/plugins/font-awesome-4.7.0/css/font-awesome.min.css",
                       "~/Content/User/plugins/OwlCarousel2-2.2.1/owl.carousel.css",
                       "~/Content/User/plugins/OwlCarousel2-2.2.1/owl.theme.default.css",
                       "~/Content/User/plugins/OwlCarousel2-2.2.1/animate.css",
                       "~/Content/User/styles/main_styles.css",
+                      "~/Content/User/styles/courses.css",
                       "~/Content/User/styles/about.css",
                       "~/Content/User/styles/about_responsive.css",
                       "~/Content/User/styles/register.css",

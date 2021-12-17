@@ -1,0 +1,158 @@
+﻿@model List<Healthy_Food.Models.Product>
+@{
+    ViewBag.Title = "Products";
+}
+<div class="home">
+    <div class="breadcrumbs_container">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><i class="bi bi-house-door"></i><a href="index1.html">Home</a></li>
+                            <li>Products</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Information container-->
+<div class="filter_left">
+    <div class="sidebar">
+
+        <!-- Categories -->
+        <div class="sidebar_section">
+            <div class="sidebar_section_title">Categories</div>
+            <div class="sidebar_categories">
+                <ul>
+                    <li><a href="classify.html">Good  <i class="bi bi-emoji-smile"></i></a></li>
+                    <li><a href="classify.html">Very Good  <i class="bi bi-emoji-wink"></i></a></li>
+                    <li><a href="classify.html">Good  <i class="bi bi-emoji-wink"></i></a></li>
+                    <li><a href="classify.html">Perfect  <i class="bi bi-emoji-laughing"></i></a></li>
+                    <li><a href="classify.html">Tasty  <i class="bi bi-emoji-sunglasses"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Latest Content -->
+        <div class="sidebar_section">
+            <div class="sidebar_section_title">Latest Dry Fruits</div>
+            <div class="sidebar_latest">
+
+                <!-- Latest Course -->
+                <div class="latest d-flex flex-row align-items-start justify-content-start">
+                    <div class="latest_image"><div><img src="~/Content/User/img/plums.jpg" alt=""></div></div>
+                    <div class="latest_content">
+                        <div class="latest_title"><a href="#">Plums</a></div>
+                        <div class="latest_date"><a href="#"><i class="bi bi-cart-plus"></i>  $100</a></div>
+                    </div>
+                </div>
+
+                <!-- Latest Course -->
+                <div class="latest d-flex flex-row align-items-start justify-content-start">
+                    <div class="latest_image"><div><img src="~/Content/User/img/apple.jpg" alt=""></div></div>
+                    <div class="latest_content">
+                        <div class="latest_title"><a href="#">Apple</a></div>
+                        <div class="latest_date"><a href="#"><i class="bi bi-cart-plus"></i>  $200</a></div>
+                    </div>
+                </div>
+
+                <!-- Latest Course -->
+                <div class="latest d-flex flex-row align-items-start justify-content-start">
+                    <div class="latest_image"><div><img src="~/Content/User/img/kiwi.jpg" alt=""></div></div>
+                    <div class="latest_content">
+                        <div class="latest_title"><a href="#">Kiwi</a></div>
+                        <div class="latest_date"><a href="#"><i class="bi bi-cart-plus"></i>  $300</a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Tags -->
+        <div class="sidebar_section">
+            <div class="sidebar_section_title">Tags</div>
+            <div class="sidebar_tags">
+                <ul class="tags_list">
+                    <li><a href="#"><i class="bi bi-bookmark-heart-fill"></i>  bluecherries</a></li>
+                    <br>
+                    <li><a href="#"><i class="bi bi-bookmark-heart-fill"></i>  kiwi</a></li>
+                    <br>
+                    <li><a href="#"><i class="bi bi-bookmark-heart-fill"></i>  apple</a></li>
+                    <br>
+                    <li><a href="#"><i class="bi bi-bookmark-heart-fill"></i>  banana</a></li>
+                    <br>
+                    <li><a href="#"><i class="bi bi-bookmark-heart-fill"></i>  cherries</a></li>
+                    <br>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="filter_right">
+    <div class="container2">
+        <div class="row">
+            <div class="col">
+                <div class="section_title_container text-center">
+                    <h2 class="section_title">DRIED FRUIT INFORMATION</h2>
+                    <div class="section_subtitle">
+                        <p>
+                            These are our dried fruit products if you feel like you can buy a support for our store.<br>
+                            We love you all 🤞🙆‍♂
+                        <p>️
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row features_row">
+            @foreach (var item in Model) {
+            <!-- Item 1-->
+                <div class="col-lg-3 feature_col">
+                    <div class="feature text-center trans_400">
+                        <div class="feature_icon"><a href="information_details.html"><img src="~/Content/User/img/akai.jpg" alt=""></a></div>
+                        <h3 class="feature_title"><a href="information_details.html">@item.Name</a></h3>
+                        <span class="text_information">@item.Content</span>
+                        <div class="course_price ml-auto"><span>$100</span>$@item.Price</div>
+                        <div class="cart2"><a href="#" class="effect"><i class="bi bi-cart-plus"></i><span class="e"> Add To Cart</span></a></div>
+                    </div>
+                </div> 
+            }
+        </div>
+    </div>
+</div>
+
+
+<!--End information container-->
+<!--newsletter-->
+<div class="newsletter">
+    <div class="newsletter_background parallax-window" data-parallax="scroll" data-image-src="~/Content/User/img/newsletter2.jpg" data-speed="0.8"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="newsletter_container d-flex flex-lg-row flex-column align-items-center justify-content-start">
+
+                    <!-- Newsletter Content -->
+                    <div class="newsletter_content text-lg-left text-center">
+                        <div class="newsletter_title">Sign up to receive the latest deals</div>
+                        <div class="newsletter_subtitle">Subcribe to lastest smartphones news & great deals we offer</div>
+                    </div>
+
+                    <!-- Newsletter Form -->
+                    <div class="newsletter_form_container ml-lg-auto">
+                        <form action="#" id="newsletter_form" class="newsletter_form d-flex flex-row align-items-center justify-content-center">
+                            <input type="email" class="newsletter_input" placeholder="Your Email" required="required">
+                            <button type="submit" class="newsletter_button">subscribe</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

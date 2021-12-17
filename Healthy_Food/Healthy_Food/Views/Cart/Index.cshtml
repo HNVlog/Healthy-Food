@@ -1,0 +1,113 @@
+﻿@{ ViewBag.Title = "Cart";
+    var cart = Session["Cart"] != null ? (Healthy_Food.Models.Cart)Session["Cart"] : new Healthy_Food.Models.Cart(); }
+
+<div class="home">
+    <div class="breadcrumbs_container">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="index1.html">Home</a></li>
+                            <li>Shopping Cart</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@if (cart.Items.Count > 0)
+{
+    
+        <div class="super_container">
+            <h2 class="mb-5 text-center">Shopping Cart</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="table-responsive">
+                        <table id="myTable" class="table">
+                            <thead>
+                                <tr>
+                                    <th>PRODUCT</th>
+                                    <th>NAME</th>
+                                    <th>QUANTITY</th>
+                                    <th>PRICE</th>
+                                    <th class="text-right">
+                                        <span class="amount">AMOUNT</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            @foreach (var item in cart.Items)
+                            {
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="product-img">
+                                                <div class="img-prdct">
+                                                    <img src="~/Content/User/img/akai.jpg">
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Product.Name)
+                                        </td>
+                                        <td>
+                                            
+                                            <div class="button-container">
+                                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                                <input type="text" name="qty" min="1" class="qty form-control" value="1" />
+                                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Product.Price)
+                                        </td>
+                                        <td align="right">
+                                            <span class="amount">@cart.GrandTotal</span>
+                                        </td>
+                                    </tr>
+                                </tbody>                   
+                                }
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="checkout_start">
+            <div class="checkout1">
+                <ul>
+                    <li class="subtotal1">Total :<span>@cart.GrandTotal</span></li>
+                    <hr>
+                    <button class="checkptn" type="submit">PROCEED TO CHECK OUT</button>
+                </ul>
+            </div>
+        </div> <!-- Newsletter -->
+    }
+
+<div class="newsletter">
+    <div class="newsletter_background parallax-window" data-parallax="scroll" data-image-src="~/Content/User/img/newsletter2.jpg" data-speed="0.8"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="newsletter_container d-flex flex-lg-row flex-column align-items-center justify-content-start">
+
+                    <!-- Newsletter Content -->
+                    <div class="newsletter_content text-lg-left text-center">
+                        <div class="newsletter_title">Sign up to receive the latest deals</div>
+                        <div class="newsletter_subtitle">Subcribe to lastest smartphones news & great deals we offer</div>
+                    </div>
+
+                    <!-- Newsletter Form -->
+                    <div class="newsletter_form_container ml-lg-auto">
+                        <form action="#" id="newsletter_form" class="newsletter_form d-flex flex-row align-items-center justify-content-center">
+                            <input type="email" class="newsletter_input" placeholder="Your Email" required="required">
+                            <button type="submit" class="newsletter_button">subscribe</button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -20,5 +20,7 @@ namespace Healthy_Food.Models
         //public DbSet<Products> Product { get; set; }
         public DbSet<Users> User { get; set; }
         public DbSet<Admin> Admins { get; set; }
+
+        public System.Data.Entity.DbSet<Healthy_Food.Models.Product> Products { get; set; }
     }
 }
